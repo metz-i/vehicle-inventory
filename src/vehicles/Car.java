@@ -20,4 +20,12 @@ public class Car extends Vehicle {
         this.numberOfDoors = 0;
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + "Car{" +
+                "numberOfCylinders=" + numberOfCylinders +
+                ", color='" + color + '\'' +
+                ", numberOfDoors=" + numberOfDoors +
+                '}';
+    }
 }

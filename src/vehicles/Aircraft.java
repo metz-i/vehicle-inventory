@@ -6,7 +6,7 @@ public class Aircraft extends Vehicle {
     private int numberOfCrew;
     private int numberOfPassengers;
 
-    public Aircraft (String make, String model, int year, int numberOfCylinders, String color, int numberOfDoors) {
+    public Aircraft (String make, String model, int year, int numberOfEngines, int numberOfCrew, int numberOfPassengers) {
         super(make, model, year);
         this.numberOfEngines = numberOfEngines;
         this.numberOfCrew = numberOfCrew;
@@ -20,4 +20,12 @@ public class Aircraft extends Vehicle {
         this.numberOfPassengers = 0;
     }
 
+    @Override
+    public String toString() {
+        return super.toString()  +
+                "numberOfEngines=" + numberOfEngines +
+                ", numberOfCrew=" + numberOfCrew +
+                ", numberOfPassengers=" + numberOfPassengers +
+                '}';
+    }
 }

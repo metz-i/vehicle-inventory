@@ -10,4 +10,13 @@ public class Vehicle {
         this.model = model;
         this.year = year;
     }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "make='" + make + '\'' +
+                ", model='" + model + '\'' +
+                ", year=" + year +
+                '}';
+    }
 }
